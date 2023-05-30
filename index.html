@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+    <title>StarBucks</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+
+    <img src="images/img-starbucks-logo.png" alt="Logo do StarBucks" class="logo">
+    
+    <div class="container">
+
+        <div class="text-box">
+            <h2>It's not just Coffee <br>
+            It's <span>Starbucks</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quia blanditiis a nemo? Iusto eum reprehenderit at magni qui officiis beatae ab id molestias laudantium in ipsum ea consectetur quo?</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="box-img">
+            <img src="./images/img-verdeSombreado.png" alt="Bebida gelada do Starbucks" class="green">
+        </div>
+
+    </div>
+    <div class="button-menu">
+        <img src="./images/img-starbucks-verde.png" class="menu" onclick="changeimg('./images/img-verdeSombreado.png'); changeColor('#017143')">
+
+        <img src="./images/img-starbucks-rosa.png" alt="Bebida do Starbucks" class="menu" onclick="changeimg('./images/img-starbucks-rosa.png'); changeColor('#eb7495')">
+
+        <img src="./images/img-starbucks-roxo.png" alt="Bebida do Starbucks" class="menu" onclick="changeimg('./images/img-starbucks-roxo.png'); changeColor('#d752b1')">
+    </div>
+</body>
+<script>
+    let img = document.querySelector(".green")
+    let circle = document.querySelector(".circle")
+
+    function changeimg(endereco) {
+        img.src = endereco
+    }
+
+    function changeColor(color) {
+        circle.style.background = color
+    }
+
+</script>
+
+</html>
